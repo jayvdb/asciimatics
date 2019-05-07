@@ -19,6 +19,7 @@ matrix:
       python: '3.6'
     - env: BUILD=test
       python: '3.7'
+      dist: xenial
     - env: BUILD=test
       python: 'pypy'
 
