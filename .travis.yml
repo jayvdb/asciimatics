@@ -46,11 +46,6 @@ after_success:
     set -ex
     case "$BUILD" in
       test)
-        mv .coverage .coverage.travis
-        appveyor-artifacts download
-        python coverage_fix.py */.coverage
-        coverage combine .coverage.travis */.coverage
-        coveralls
         ;;
     esac
     set +ex
