@@ -18,6 +18,8 @@ matrix:
     - env: BUILD=test
       python: '3.6'
     - env: BUILD=test
+      python: '3.7'
+    - env: BUILD=test
       python: 'pypy'
 
     - env: BUILD=docs
